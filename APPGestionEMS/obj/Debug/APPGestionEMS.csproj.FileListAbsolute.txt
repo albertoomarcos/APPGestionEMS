@@ -136,3 +136,4 @@ C:\Users\Portatil\source\repos\APPGestionEMS\APPGestionEMS\obj\Debug\APPGestionE
 C:\Users\Portatil\source\repos\APPGestionEMS\APPGestionEMS\obj\Debug\APPGestionEMS.csproj.GenerateResource.cache
 C:\Users\Portatil\source\repos\APPGestionEMS\APPGestionEMS\obj\Debug\APPGestionEMS.Migrations.CreateCursos.resources
 C:\Users\Portatil\source\repos\APPGestionEMS\APPGestionEMS\obj\Debug\APPGestionEMS.Migrations.CreateGrupoClases.resources
+C:\Users\Portatil\source\repos\APPGestionEMS\APPGestionEMS\obj\Debug\APPGestionEMS.Migrations.CreateAsignacionDocente.resources
