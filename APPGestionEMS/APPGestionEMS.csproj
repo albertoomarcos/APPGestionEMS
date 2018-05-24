@@ -198,6 +198,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AsignacionDocentesController.cs" />
     <Compile Include="Controllers\CursosController.cs" />
+    <Compile Include="Controllers\EvaluacionesController.cs" />
     <Compile Include="Controllers\GrupoClasesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -229,6 +230,7 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\AsignacionDocentes.cs" />
     <Compile Include="Models\Cursos.cs" />
+    <Compile Include="Models\Evaluaciones.cs" />
     <Compile Include="Models\GrupoClases.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -315,6 +317,11 @@
     <Content Include="Views\Matriculas\Details.cshtml" />
     <Content Include="Views\Matriculas\Edit.cshtml" />
     <Content Include="Views\Matriculas\Index.cshtml" />
+    <Content Include="Views\Evaluaciones\Create.cshtml" />
+    <Content Include="Views\Evaluaciones\Delete.cshtml" />
+    <Content Include="Views\Evaluaciones\Details.cshtml" />
+    <Content Include="Views\Evaluaciones\Edit.cshtml" />
+    <Content Include="Views\Evaluaciones\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

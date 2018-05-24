@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\APPGestionEMS",
+    "\\APPGestionEMS\\Controllers",
+    "\\APPGestionEMS\\Migrations",
+    "\\APPGestionEMS\\Models",
+    "\\APPGestionEMS\\Views",
+    "\\APPGestionEMS\\Views\\Shared"
+  ],
+  "SelectedNode": "\\APPGestionEMS\\Controllers\\MatriculasController.cs",
+  "PreviewInSolutionExplorer": false
+}
