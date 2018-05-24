@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using APPGestionEMS.Models;
+using Microsoft.AspNet.Identity;
 
 namespace APPGestionEMS.Controllers
 {
@@ -15,10 +16,11 @@ namespace APPGestionEMS.Controllers
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
-        // GET: MisEvaluaciones
+        // GET: Evaluaciones
         public ActionResult Index()
         {
-            var evaluaciones = db.Evaluaciones.Include(e => e.Curso).Include(e => e.User);
+            string currentUserId = User.Identity.GetUserId();
+            var evaluaciones = db.Evaluaciones.Include(e => e.Curso).Include(e => e.User).Where(p => p.UserId == currentUserId);
             return View(evaluaciones.ToList());
         }
 
@@ -37,7 +39,7 @@ namespace APPGestionEMS.Controllers
             return View(evaluaciones);
         }
 
-        // GET: MisEvaluaciones/Create
+        // GET: Evaluaciones/Create
         public ActionResult Create()
         {
             ViewBag.CursoId = new SelectList(db.Cursos, "Id", "Nombre");
