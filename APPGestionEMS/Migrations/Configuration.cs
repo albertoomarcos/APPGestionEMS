@@ -22,17 +22,17 @@ namespace APPGestionEMS.Migrations
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
             //  to avoid creating duplicate seed data.
             string administrador = "administrador";
-            string profesor = " profesor";
-            string alumno = " alumno";
+            string profesor = "profesor";
+            string alumno = "alumno";
             AddRole(context, administrador);
             AddRole(context, profesor);
             AddRole(context, alumno);
-            AddUser(context, "Admin", "Istrador", "admin@upm.es", administrador);
-            AddUser(context, "Jessica", "Diaz", "yesica.diaz@upm.es", profesor);
-            AddUser(context, "Carolina", " Gallardo ", "carolina.gallardop@upm.es", profesor);
-            AddUser(context, "Alberto", " Marcos ", "alberto.mblasco@alumnos.upm.es", alumno);
-            AddUser(context, "Armando", " Guerra ", "armandoguerra@alumnos.upm.es", alumno);
-            AddUser(context, "Mariano", " Rajoy ", "mariano.rajoy@alumnos.upm.es", alumno);
+            AddUser(context, "Admin", "Istrador", "admin@upm.es",administrador);
+            AddUser(context, "Jessica", "Diaz", "yesica.diaz@upm.es",profesor);
+            AddUser(context, "Carolina", "Gallardo", "carolina.gallardop@upm.es",profesor);
+            AddUser(context, "Alberto", "Marcos", "alberto.mblasco@alumnos.upm.es",alumno);
+            AddUser(context, "Armando", "Guerra", "armandoguerra@alumnos.upm.es",alumno);
+            AddUser(context, "Mariano", "Rajoy", "mariano.rajoy@alumnos.upm.es",alumno);
         }
         public void AddRole(ApplicationDbContext context, String role)
         {

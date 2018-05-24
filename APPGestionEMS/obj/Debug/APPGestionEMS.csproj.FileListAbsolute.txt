@@ -138,3 +138,4 @@ C:\Users\Portatil\source\repos\APPGestionEMS\APPGestionEMS\obj\Debug\APPGestionE
 C:\Users\Portatil\source\repos\APPGestionEMS\APPGestionEMS\obj\Debug\APPGestionEMS.Migrations.CreateGrupoClases.resources
 C:\Users\Portatil\source\repos\APPGestionEMS\APPGestionEMS\obj\Debug\APPGestionEMS.Migrations.CreateAsignacionDocente.resources
 C:\Users\Portatil\source\repos\APPGestionEMS\APPGestionEMS\obj\Debug\APPGestionEMS.Migrations.CreateMatriculas.resources
+C:\Users\Portatil\source\repos\APPGestionEMS\APPGestionEMS\obj\Debug\APPGestionEMS.Migrations.CreateEvaluaciones.resources

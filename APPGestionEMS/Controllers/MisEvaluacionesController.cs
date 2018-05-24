@@ -10,19 +10,19 @@ using APPGestionEMS.Models;
 
 namespace APPGestionEMS.Controllers
 {
-    [Authorize(Roles = "profesor")]
-    public class EvaluacionesController : Controller
+    [Authorize(Roles = " alumno")]
+    public class MisEvaluacionesController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
-        // GET: Evaluaciones
+        // GET: MisEvaluaciones
         public ActionResult Index()
         {
             var evaluaciones = db.Evaluaciones.Include(e => e.Curso).Include(e => e.User);
             return View(evaluaciones.ToList());
         }
 
-        // GET: Evaluaciones/Details/5
+        // GET: MisEvaluaciones/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -37,7 +37,7 @@ namespace APPGestionEMS.Controllers
             return View(evaluaciones);
         }
 
-        // GET: Evaluaciones/Create
+        // GET: MisEvaluaciones/Create
         public ActionResult Create()
         {
             ViewBag.CursoId = new SelectList(db.Cursos, "Id", "Nombre");
@@ -45,7 +45,7 @@ namespace APPGestionEMS.Controllers
             return View();
         }
 
-        // POST: Evaluaciones/Create
+        // POST: MisEvaluaciones/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -64,7 +64,7 @@ namespace APPGestionEMS.Controllers
             return View(evaluaciones);
         }
 
-        // GET: Evaluaciones/Edit/5
+        // GET: MisEvaluaciones/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -81,7 +81,7 @@ namespace APPGestionEMS.Controllers
             return View(evaluaciones);
         }
 
-        // POST: Evaluaciones/Edit/5
+        // POST: MisEvaluaciones/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -99,7 +99,7 @@ namespace APPGestionEMS.Controllers
             return View(evaluaciones);
         }
 
-        // GET: Evaluaciones/Delete/5
+        // GET: MisEvaluaciones/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -114,7 +114,7 @@ namespace APPGestionEMS.Controllers
             return View(evaluaciones);
         }
 
-        // POST: Evaluaciones/Delete/5
+        // POST: MisEvaluaciones/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
