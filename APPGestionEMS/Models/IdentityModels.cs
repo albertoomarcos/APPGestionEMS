@@ -38,6 +38,8 @@ namespace APPGestionEMS.Models
 
         public System.Data.Entity.DbSet<APPGestionEMS.Models.AsignacionDocentes> AsignacionDocentes { get; set; }
 
-        
+        public System.Data.Entity.DbSet<APPGestionEMS.Models.Matriculas> Matriculas { get; set; }
+
+      
     }
 }
