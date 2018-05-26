@@ -22,7 +22,7 @@ namespace APPGestionEMS.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "¿En qué consiste este proyecto?";
+            ViewBag.Message = "¿Quiénes somos?";
 
             return View();
         }
