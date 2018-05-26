@@ -15,14 +15,14 @@ namespace APPGestionEMS.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Enunciado de la práctica";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "¿Quiénes somos?";
 
             return View();
         }

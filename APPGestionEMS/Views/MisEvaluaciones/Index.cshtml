@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<APPGestionEMS.Models.Evaluaciones>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Mis Evaluaciones";
 }
 
-<h2>Index</h2>
+<h2>Mis Evaluaciones</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Añadir evaluación", "Create")
 </p>
 <table class="table">
     <tr>
@@ -64,8 +64,15 @@
         <td>
             @Html.DisplayFor(modelItem => item.Practica)
         </td>
+<<<<<<< HEAD
         <td>           
             @Html.ActionLink("Details", "Details", new { id=item.Id }) |           
+=======
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Detalles", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Borrar", "Delete", new { id=item.Id })
+>>>>>>> ramaAdicional
         </td>
     </tr>
 }
