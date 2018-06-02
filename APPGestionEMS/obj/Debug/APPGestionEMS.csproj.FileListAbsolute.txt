@@ -268,7 +268,6 @@ C:\Users\david\Documents\GitHub\APPGestionEMS\APPGestionEMS\bin\es\EntityFramewo
 C:\Users\david\Documents\GitHub\APPGestionEMS\APPGestionEMS\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
 C:\Users\david\Documents\GitHub\APPGestionEMS\APPGestionEMS\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
 C:\Users\david\Documents\GitHub\APPGestionEMS\APPGestionEMS\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
-C:\Users\david\Documents\GitHub\APPGestionEMS\APPGestionEMS\obj\Debug\APPGestionEMS.csprojAssemblyReference.cache
 C:\Users\david\Documents\GitHub\APPGestionEMS\APPGestionEMS\obj\Debug\APPGestionEMS.Migrations.ModifyUsers.resources
 C:\Users\david\Documents\GitHub\APPGestionEMS\APPGestionEMS\obj\Debug\APPGestionEMS.Migrations.CreateCursos.resources
 C:\Users\david\Documents\GitHub\APPGestionEMS\APPGestionEMS\obj\Debug\APPGestionEMS.Migrations.CreateGrupoClases.resources
