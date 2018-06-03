@@ -11,7 +11,7 @@ using Microsoft.AspNet.Identity;
 
 namespace APPGestionEMS.Controllers
 {
-    [Authorize(Roles = "profesor,administrador")]
+    [Authorize(Roles = "profesor")]
     public class MatriculasController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
