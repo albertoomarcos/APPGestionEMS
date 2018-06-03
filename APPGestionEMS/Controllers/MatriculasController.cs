@@ -19,9 +19,8 @@ namespace APPGestionEMS.Controllers
         // GET: Matriculas
         public ActionResult Index()
         {
-            int grupo = getGrupoClase();
-            var matriculas = db.Matriculas.Include(m => m.Curso).Include(m => m.Grupo).Include(m => m.User).Where(p => p.GrupoId ==
-            grupo).ToList();
+
+            var matriculas = db.Matriculas.Include(m => m.Curso).Include(m => m.Grupo).Include(m => m.User);
             return View(matriculas.ToList());
         }
 
@@ -140,13 +139,6 @@ namespace APPGestionEMS.Controllers
             }
             base.Dispose(disposing);
         }
-        private int getGrupoClase()
-        {
-            string currentUserId = User.Identity.GetUserId();
-            var grupos = db.AsignacionDocentes.Where(p => p.UserId == currentUserId).ToList();
-            if (grupos.Count == 0)
-                return -1;
-            else return grupos.First().Grupo.Id;
-        }
+        
     }
 }
